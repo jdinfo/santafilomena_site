@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+<link
+	href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap"
+	rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="container_contato">
+		<header>
+			<div>
+				<img src="_img/logo/ancora.png" alt="">
+			</div>
+			<div class="nome_botoes">
+				<h1>Santa Filomena</h1>
+				<ul class="botoes">
+					<li><a href="/">Home</a></li>
+					<li><a href="historia">História</a></li>
+					<li><a href="oracoes">Orações</a></li>
+					<li><a href="sacramentais">Sacramentais</a></li>
+					<li><a href="milagres">Milagres</a></li>
+					<li><a href="contato">Contato</a></li>
+				</ul>
+			</div>
+			<div>
+				<img src="_img/logo/cruz.png" alt="">
+			</div>
+		</header>
+		<main class="contato">
+			<form name="cadastro" action="enviado.html" method="POST">
+
+				<fieldset class="fieldset_contato">
+					<div id="formulario_itens">
+						<label class="entrada" for="nome">Nome:</label> <input type="text"
+							name="nome" id="nome" required>
+					</div>
+					<div>
+						<label class="entrada" for="sobrenome">Sobrenome:</label> <input
+							type="text" name="sobrenome" id="sobrenome">
+					</div>
+
+					<div>
+						<label class="entrada" for="email">E-mail:</label> <input
+							type="email" name="email" id="email" required>
+					</div>
+					<div>
+						<label for="pergunta">Você já conhecia Santa Filomena?</label> <label>
+							<input type="radio" name="pergunta" value="sim">Sim
+						</label> <label> <input type="radio" name="pergunta" value="nao">Não
+						</label>
+					</div>
+
+					<div>
+						<label>Sobre o que você mais gostaria de saber sobre Santa
+							Filomena?</label> <select id="saber">
+							<option selected disabled value="">selecione</option>
+							<option value="">História</option>
+							<option value="">Orações</option>
+							<option value="">Savramentais</option>
+							<option value="">Milagres</option>
+						</select>
+					</div>
+					<div>
+						<label for="">Com que frequência você visita nosso site?</label>
+						<input type="checkbox" id="periodo_1" name="periodo_1" value="diario">
+						<label for="periodo_1">diário</label>
+						<input type="checkbox" id="tecnologia2" name="periodo_2" value="semanal">
+						<label for="periodo_2">semanal</label>
+						<input type="checkbox" id="periodo_3" name="periodo_3" value="mensal">
+						<label for="periodo_3">mensal</label>
+					</div>
+
+					<div id="campo_texto">
+						<br> <label>Deixe aqui sua opinião sobre o site:</label>
+						<textarea rows="10" style="width: 30em" id="opiniao"
+							name="opiniao"></textarea>
+					</div>
+
+					<div id="botoes_inferior">
+						<button type="submit" width=100px>Enviar</button>
+						<button type="reset">Limpar</button>
+					</div>
+
+				</fieldset>
+
+			</form>
+		</main>
+		<aside class="lateral_direita_contato"></aside>
+		<footer>
+			<p>@2021 - JC Design</p>
+		</footer>
+	</div>
+</body>
+
+</html>
